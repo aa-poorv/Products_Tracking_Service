@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product New</title>
+  </head>
+  <body>
+    <h2><%= shop.name %> New product</h2>
+    <form action="/product/<%= id %>" method="post">
+      <div>
+        <label for="name"> Product Name</label>
+        <input type="text" name="name" id="name" value="" />
+      </div>
+      <div>
+        <label for="rate">Rate</label>
+        <input type="number" name="rate" id="rate" />
+      </div>
+      <div>
+        <label for="category">category</label>
+        <input type="text" name="category" id="category" />
+      </div>
+      <button>Sumbit</button>
+    </form>
+    <a href="/shop/show">Cancel</a>
+  </body>
+</html>
